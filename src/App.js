@@ -16,7 +16,7 @@ class App extends Component {
           hope to see you then.<br /><br /><img style={{ width: 10 + 'vw' }} src={smile}/>
         </p>
         <br/>
-        <h4>Meanwhile you can check my profile on <a href='www.linkedin.com/in/alexandre-pelagaggi'>Linkedin</a></h4>
+        <h4>Meanwhile you can check my profile on <a href='https://www.linkedin.com/in/alexandre-pelagaggi'>Linkedin</a></h4>
       </div>
     );
   }
