@@ -15,6 +15,8 @@ class App extends Component {
           Welcome to my personal webpage. Soon an amazing profile will be here.<br /><br />
           hope to see you then.<br /><br /><img style={{ width: 10 + 'vw' }} src={smile}/>
         </p>
+        <br/>
+        <h4>Meanwhile you can check my profile on <a href='www.linkedin.com/in/alexandre-pelagaggi'>Linkedin</a></h4>
       </div>
     );
   }
