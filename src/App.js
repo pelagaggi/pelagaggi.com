@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import logo from './logo2.svg';
-import CEM from './CEM.jpg';
 import phygitall from './Logo_Phygitall.png';
 import TKA from './TKA.jpg';
 import eletro from './eletro.jpg';
@@ -8,8 +7,8 @@ import cefet from './cefet.png';
 import cnpq from './cnpq.png';
 import isep from './ISEP.jpg';
 import './App.css';
-import { Container, Row, Col ,Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button } from 'reactstrap';
+import Profile from './Profile.js'
+import { Container, Row, Col ,Card, CardImg, CardText, CardBody} from 'reactstrap';
 
 
 class App extends Component {
@@ -22,19 +21,7 @@ class App extends Component {
         </header>
         <Container>
         <Row>
-          <Col>
-            <div>
-              <Card>
-                <CardImg top width="50%" src={CEM} alt="Card image cap" />
-                <CardBody>
-                  <CardTitle>Professional Developer</CardTitle>
-                  <CardSubtitle>IoT aimed Software developer at</CardSubtitle>
-                  <CardText>Phygitall Soluções em IoT Solutions</CardText>
-                  <a href="https://www.linkedin.com/in/alexandre-pelagaggi" ><Button>Linkedin</Button></a>
-                </CardBody>
-              </Card>
-            </div>
-          </Col>
+          <Profile/>
           <Col>
             <Row>
               <Card>
