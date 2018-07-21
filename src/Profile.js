@@ -2,18 +2,17 @@ import React, { Component } from 'react';
 import CEM from './profile.png';
 import { Alert,ListGroup,ListGroupItem, Row, Col ,Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Button } from 'reactstrap';
-
-  //UA-117357742-1
 class App extends Component {
     render() {
+        const border_Style = {
+            'box-shadow': '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+            'border-radius': '10%',
+            'padding':'20px'
+            };
         return (
             <Col>
                 <Card>
-                    <CardImg style={{
-                        'box-shadow': '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
-                        'border-radius': '10%',
-                        'padding':'20px'
-                        }} src={CEM} alt="Card image cap" />
+                    <CardImg style={border_Style} src={CEM} alt="Card image cap" />
                     <CardBody>
                       <CardTitle>Professional Developer</CardTitle>
                       <CardSubtitle>IoT aimed Software developer at</CardSubtitle>
@@ -80,16 +79,10 @@ class App extends Component {
                         <Alert color="primary">
                             Contacs:
                         </Alert>
-                        <a href="mail://alexandre@pelagaggi.com" style={{
-                        'box-shadow': '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
-                        'border-radius': '10%',
-                        'padding':'20px'
-                        }}><Button color="primary">alexandre@pelagaggi.com</Button></a>
-                        <a href="https://www.linkedin.com/in/alexandre-pelagaggi" style={{
-                        'box-shadow': '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
-                        'border-radius': '10%',
-                        'padding':'20px'
-                        }}><Button color="primary"> Linkedin</Button></a>
+                        <a href="mailto://alexandre@pelagaggi.com" style={border_Style}><Button color="primary">alexandre@pelagaggi.com</Button></a>
+                        <a href="https://www.linkedin.com/in/alexandre-pelagaggi" style={border_Style}><Button color="primary"> Linkedin</Button></a>
+                        <a href="https://github.com/pelagaggi" style={border_Style}><Button color="primary"> Github</Button></a>
+                        
                     </CardBody>
                 </Card>
                 
