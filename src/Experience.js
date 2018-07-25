@@ -29,7 +29,9 @@ class Experience extends Component {
             'box-shadow': '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
             'border-radius': '5%',
             //'background-color': 'beige',
-            'background-color': '#f2ecc6',
+            //'background-color' : '#f2ecc6',
+            'background-color' :  '#cce5ff',
+            'border-color'     :  '#b8daff',
             'margin-bottom': '15px',
             'padding':'3px'
         };
