@@ -38,12 +38,12 @@ class App extends Component {
             <Experience
               logo={eletro} 
               intro={'Internship in VBA Visio solution from Nov/2016 to Nov/2017'}
-              description={`•	He was Intern in instrumentation and control section of Eletronuclear-Eletrobras, acting as a software developer for nuclear power plant Angra 2 and Angra 3, assisting in control room GUI human factors engineering via VBA solutions for Microsoft VISIO and punctually developing QT M2M supervisory systems.`}
+              description={`Intern in instrumentation and control section of Eletronuclear-Eletrobras, acting as a software developer for nuclear power plant Angra 2 and Angra 3, assisting in control room GUI human factors engineering via VBA solutions for Microsoft VISIO and punctually developing QT M2M supervisory systems.`}
             />
             <Experience
               logo={cefet} 
               intro={'Researcher in power electronics solid state devices from Oct/2016 to Nov/2017'}
-              description={`•	CEFET-RJ researcher in power electronics lab LAEP, aiming smart grid technology utilizing Arduino Mega micro-controller and adding JAVA GUI to control power electronics components and accomplish smart grid aimed IoT applications.`}
+              description={`CEFET-RJ researcher in power electronics lab LAEP, aiming smart grid technology utilizing Arduino Mega micro-controller and adding JAVA GUI to control power electronics components and accomplish smart grid aimed IoT applications.`}
             />
             <Experience
               logo={isep} 
