@@ -18,8 +18,8 @@ class App extends Component {
       <div className="App">
         
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Alexandre Pelagaggi</h1>
+          <h1 className="App-title">Alexandre Rodrigues Pelagaggi Nunes </h1>
+          <h4>Professional Developer</h4>
         </header>
         <Container>
         <Row>

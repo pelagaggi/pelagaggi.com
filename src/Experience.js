@@ -14,7 +14,8 @@ class Experience extends Component {
         const border_Style = {
             'box-shadow': '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
             'border-radius': '7%',
-            'padding':'20px'
+            'padding':'20px',
+            
         };
         const Card_Style = {
             'box-shadow': '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
@@ -22,7 +23,8 @@ class Experience extends Component {
             //'background-color': 'beige',
             //'background-color': '#f2ecc6',
             'padding':'3px',
-            'cursor': 'pointer'
+            'cursor': 'pointer',
+            width:"100%",
         };
         
         const In_Style = {
@@ -42,7 +44,7 @@ class Experience extends Component {
                     <CardBody>
                     <Row>
                         <Col >
-                        <Card>
+                        <Card style={{width:"100%"}}>
                             <CardImg style ={border_Style} top width="10%" src={this.props.logo} alt="Card image cap" />
                         </Card>
                         </Col >

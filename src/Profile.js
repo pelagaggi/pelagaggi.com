@@ -7,16 +7,18 @@ class App extends Component {
         const border_Style = {
             'box-shadow': '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
             'border-radius': '10%',
-            'padding':'20px'
+            'padding':'1vh',
             };
         return (
             <Col>
-                <Card>
+                <Card style={{
+            marginLeft:"1%",
+            marginRight:"1%",}}> 
                     <CardImg style={border_Style} src={CEM} alt="Card image cap" />
-                    <CardBody>
-                      <CardTitle>Professional Developer</CardTitle>
-                      <CardSubtitle>IoT aimed Software developer at</CardSubtitle>
-                      <CardText>Phygitall Soluções em IoT Solutions</CardText>
+                    <CardBody style={{textAlign:"left"}}>
+                      <CardTitle style={{textAlign:"left"}}>Developer at Altran Portugal</CardTitle>
+                      <CardSubtitle style={{margin:"1vh 1vh 1vh 1vh"}}>Citizenship:<br/>Portuguese<br/>Brasilian</CardSubtitle>
+                      <CardText>Born: 04 - August - 1994</CardText>
                         <Col>
                         <Row>
                                 <Col>
@@ -46,7 +48,6 @@ class App extends Component {
                                         <ListGroupItem>Python</ListGroupItem>
                                         <ListGroupItem>Git version control</ListGroupItem>
                                         <ListGroupItem>HTML5</ListGroupItem>
-                                        <ListGroupItem>jQuery</ListGroupItem>
                                         <ListGroupItem>Java</ListGroupItem>
                                         <ListGroupItem>ReactJS</ListGroupItem>
                                         <ListGroupItem>REST Integrations</ListGroupItem>
@@ -76,13 +77,14 @@ class App extends Component {
                             </Row>
                         </Col>
                         <br/>
-                        <Alert color="primary">
-                            Contacs:
-                        </Alert>
-                        <a href="mailto://alexandre@pelagaggi.com" style={border_Style}><Button color="primary">alexandre@pelagaggi.com</Button></a>
-                        <a href="https://www.linkedin.com/in/alexandre-pelagaggi" style={border_Style}><Button color="primary"> Linkedin</Button></a>
-                        <a href="https://github.com/pelagaggi" style={border_Style}><Button color="primary"> Github</Button></a>
-                        
+                        <div style={{marginTop:"1vh",marginBottom:"2vh"}}>
+                            <Alert color="primary" style={{marginBottom:"2vh"}}>
+                                Contacs:
+                            </Alert>
+                            <a href="mailto://alexandre@pelagaggi.com" style={border_Style}><Button color="primary">alexandre@pelagaggi.com</Button></a>
+                            <a href="https://www.linkedin.com/in/alexandre-pelagaggi" style={border_Style}><Button color="primary"> Linkedin</Button></a>
+                            <a href="https://github.com/pelagaggi" style={border_Style}><Button color="primary"> Github</Button></a>
+                        </div>
                     </CardBody>
                 </Card>
                 
