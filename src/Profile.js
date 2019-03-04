@@ -77,13 +77,13 @@ class App extends Component {
                             </Row>
                         </Col>
                         <br/>
-                        <div style={{marginTop:"1vh",marginBottom:"2vh"}}>
+                        <div >
                             <Alert color="primary" style={{marginBottom:"2vh"}}>
                                 Contacs:
                             </Alert>
-                            <a href="mailto://alexandre@pelagaggi.com" style={border_Style}><Button color="primary">alexandre@pelagaggi.com</Button></a>
-                            <a href="https://www.linkedin.com/in/alexandre-pelagaggi" style={border_Style}><Button color="primary"> Linkedin</Button></a>
-                            <a href="https://github.com/pelagaggi" style={border_Style}><Button color="primary"> Github</Button></a>
+                            <a style={{marginTop:"1vh",marginBottom:"2vh"}} href="mailto://alexandre@pelagaggi.com" style={border_Style}><Button color="primary">alexandre@pelagaggi.com</Button></a>
+                            <a style={{marginTop:"1vh",marginBottom:"2vh"}} href="https://www.linkedin.com/in/alexandre-pelagaggi" style={border_Style}><Button color="primary"> Linkedin</Button></a>
+                            <a style={{marginTop:"1vh",marginBottom:"2vh"}} href="https://github.com/pelagaggi" style={border_Style}><Button color="primary"> Github</Button></a>
                         </div>
                     </CardBody>
                 </Card>
