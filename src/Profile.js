@@ -16,11 +16,14 @@ class App extends Component {
             marginRight:"1%",}}> 
                     <CardImg style={border_Style} src={CEM} alt="Card image cap" />
                     <CardBody style={{textAlign:"left"}}>
-                      <CardTitle style={{textAlign:"left"}}>Developer at Altran Portugal</CardTitle>
-                      <CardSubtitle style={{margin:"1vh 1vh 1vh 1vh"}}>Citizenship:<br/>Portuguese<br/>Brasilian</CardSubtitle>
+                      <CardTitle style={{textAlign:"left"}}>Technichian at Altran Portugal</CardTitle>
+                      <CardSubtitle style={{margin:"1vh 1vh 1vh 1vh"}}>Industrial Eltrotecnic Master Student at 
+                      <a href="http://portal3.ipb.pt/index.php/en/guiaects/degree-programmes/master-programmes-mestre-degree/course?cod_escola=3043&cod_curso=9572"> IPB</a></CardSubtitle>
+                      <CardSubtitle style={{margin:"1vh 1vh 1vh 1vh"}}>Electronic Enginner bachelor student at 
+                      <a href="http://www.cefet-rj.br/index.php/bacharelado-em-engenharia-eletronica"> CEFET/RJ</a></CardSubtitle>
                       <CardText>Born: 04 - August - 1994</CardText>
                         <Col>
-                        <Row>
+                            <Row>
                                 <Col>
                                     <Alert color="primary">
                                         Excel at:

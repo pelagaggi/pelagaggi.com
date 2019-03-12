@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo2.svg';
+import circuit from "./circuit.jpeg";
 import phygitall from './Logo_Phygitall.png';
 import TKA from './TKA.jpg';
 import eletro from './eletro.jpg';
@@ -17,12 +17,13 @@ class App extends Component {
     return (
       <div className="App">
         
-        <header className="App-header">
+        <header className="App-header" style={{backgroundImage:`url(${circuit})`/*,textAlign:"left", paddingLeft:"70vw"*/}}>
           <h1 className="App-title">Alexandre Rodrigues Pelagaggi Nunes </h1>
-          <h4>Professional Developer</h4>
+          <br/>
+          <h4>Personal page / résumé</h4>
         </header>
         <Container>
-        <Row>
+        <Row style={{marginTop:"2vh"}}>
           <Profile/>
           <Col>
             <Experience
