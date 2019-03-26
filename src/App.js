@@ -30,12 +30,12 @@ class App extends Component {
             <Experience
               logo={altran}
               intro={'Altran technichiann since February 2019'}
-              description={``}
+              description={`Altran Technician since 02/2019 working in infotainment systems`}
             />
             <Experience
               logo={phygitall}
               intro={'Full stack developer intern at Phygitall (IoT solutions company) from Aug/2017 to February 2019 '}
-              description={`Middleware and Full stack developer intern in an IoT solutions company (Phygitall). Developing NodeJS middleware, ReactJS components, managing PostgreSQL databases, developing Android Native Apps. Working in LPWANs aimed applications in geolocation, telemetry, indoor location as well as LoRaWAN network integration architecture in Actility and LoRa Server network Server and performing R&D in Indoor Locations models for 2.4Ghz RF using Python machine learning. Also managing in AWS IAM, EC2 and security groups management integrated with NGINX to manage web domains and subdomains.`}
+              description={`Middleware and Full stack developer intern at Phygitall (IoT solutions company) 11/2017 to 02/2019, working in SQL databases modeling as well as developing REACT based web apps. Having experience with LoRaServer and LoRaWAN networks deployment and integrations with conventional APIS based in MQTT and REST. Fast prototyping demands with Node-red. Experience with and GIT versioning. Performed R&D in Indoor Locations models for 2.4Ghz RF using Python machine learning. Also managing in AWS IAM, EC2 and security groups management integrated with NGINX to manage web domains and subdomains`}
             />
             <Experience
               logo={TKA}
