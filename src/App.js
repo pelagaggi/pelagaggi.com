@@ -3,20 +3,21 @@ import {circuit, phygitall, altran, TKA, eletro, cefet, cnpq, isep} from "./imag
 import './App.css';
 import Profile from './components/Profile.js'
 import Experience from './components/Experience.js';
+import Filter from './components/Filter';
 import { Container, Row, Col } from 'reactstrap';
 
-
 class App extends Component {
+  
   render() {
     return (
       <div className="App">
-        
         <header className="App-header" style={{backgroundImage:`url(${circuit})`/*,textAlign:"left", paddingLeft:"70vw"*/}}>
           <h1 className="App-title">Alexandre Rodrigues Pelagaggi Nunes </h1>
           <br/>
           <h4>Personal page / résumé</h4>
         </header>
         <Container>
+        <Filter/>
         <Row style={{marginTop:"2vh"}}>
           <Profile/>
           <Col>
@@ -62,5 +63,4 @@ class App extends Component {
     );
   }
 }
-
 export default App;
