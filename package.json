@@ -9,7 +9,8 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "^2.1.8",
-    "reactstrap": "^6.3.0"
+    "reactstrap": "^6.3.0",
+    "tar": "^4.4.2"
   },
   "scripts": {
     "start": "react-scripts start",
