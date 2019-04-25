@@ -1,15 +1,8 @@
 import React, { Component } from 'react';
-import circuit from "./circuit.jpeg";
-import phygitall from './Logo_Phygitall.png';
-import altran from './Logo_Altran.png';
-import TKA from './TKA.jpg';
-import eletro from './eletro.jpg';
-import cefet from './cefet.png';
-import cnpq from './cnpq.png';
-import isep from './ISEP.jpg';
+import {circuit, phygitall, altran, TKA, eletro, cefet, cnpq, isep} from "./images/index";
 import './App.css';
-import Profile from './Profile.js'
-import Experience from './Experience.js';
+import Profile from './components/Profile.js'
+import Experience from './components/Experience.js';
 import { Container, Row, Col } from 'reactstrap';
 
 

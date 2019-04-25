@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './Experience.css';
 import { Collapse, Row, Col ,Card, CardImg, CardText, CardBody} from 'reactstrap';
 class Experience extends Component {
     constructor(props) {
