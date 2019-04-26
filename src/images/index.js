@@ -21,5 +21,6 @@ module.exports  = {
     eletro,
     cefet,
     cnpq,
-    isep
+    isep,
+    skills
 };
