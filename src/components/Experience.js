@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
-import { Collapse, Row, Col ,Card, CardImg, CardText, CardBody} from 'reactstrap';
+//import { Collapse, Row, Col ,Card, CardImg, CardText, CardBody} from 'reactstrap';
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
+import { withStyles } from '@material-ui/core/styles';
+import {Row,Col,Container} from 'reactstrap';
+import { TimelineItem }  from 'vertical-timeline-component-for-react';
+
 class Experience extends Component {
     constructor(props) {
         super(props);
@@ -10,59 +16,67 @@ class Experience extends Component {
         this.setState({ collapse: !this.state.collapse });
     }
     render() {
+        const { classes } = this.props;
         const border_Style = {
-            'box-shadow': '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
-            'border-radius': '7%',
-            'padding':'20px',
+            boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+            borderRadius: '7%',
+            padding:'5px',
+            width:"100%",
+            maxWidth:"400px",
+            display:"inline"
             
         };
-        const Card_Style = {
-            'box-shadow': '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
-            'border-radius': '1%',
-            //'background-color': 'beige',
-            //'background-color': '#f2ecc6',
-            'padding':'3px',
-            'cursor': 'pointer',
-            width:"100%",
-        };
-        
-        const In_Style = {
-            'box-shadow': '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
-            'border-radius': '5%',
-            //'background-color': 'beige',
-            //'background-color' : '#f2ecc6',
-            'background-color' :  '#cce5ff',
-            'border-color'     :  '#b8daff',
-            'margin-bottom': '15px',
-            'padding':'3px'
-        };
         return (
-            <div>
-                <Row className='hover' onClick={this.toggle}>
-                <Card style ={Card_Style}>
-                    <CardBody>
-                    <Row>
-                        <Col >
-                        <Card style={{width:"100%"}}>
-                            <CardImg style ={border_Style} top width="10%" src={this.props.logo} alt="Card image cap" />
-                        </Card>
-                        </Col >
-                    </Row>
-                    <br/>
-                    <CardText>{this.props.intro}</CardText>
-                    </CardBody>
+            <TimelineItem
+            key={this.props.key}
+            dateText={this.props.dateText}
+            style={{ color: "#4d70ad" }}
+            dateInnerStyle={{ background: '#4d70ad'}}>
+                <Card className={classes.card} >
+            
+                    <CardContent >
+                        <Container style={{width:"100%"}}>
+                            <Row style={{marginBottom:"2vh"}}>
+                                <Col>
+                                <img style={border_Style} src={this.props.logo} alt="Live from space album cover"/>
+                                <h5 style={{marginLeft:"1vw",display:"inline"}}>
+                                    {this.props.intro}
+                                </h5>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <p style={{"white-space": "pre-line","text-align":"justify"}}>{this.props.description}</p>
+                            </Row>
+                        </Container>            
+                    </CardContent>
                 </Card>
-                </Row>
-                <br/>
-                <Collapse isOpen={this.state.collapse}>
-                  <Card style={In_Style}>
-                    <CardBody>
-                    {this.props.description}
-                    </CardBody>
-                  </Card>
-                </Collapse>
-            </div>
-        )
+            </TimelineItem>
+    )
     }
 }
-export default Experience;
+const styles = theme => ({
+    card: {
+      display: 'flex',
+    },
+    details: {
+      display: 'flex',
+      flexDirection: 'column',
+    },
+    content: {
+      flex: '1 0 auto',
+    },
+    cover: {
+      width: 151,
+    },
+    controls: {
+      display: 'flex',
+      alignItems: 'center',
+      paddingLeft: theme.spacing.unit,
+      paddingBottom: theme.spacing.unit,
+    },
+    playIcon: {
+      height: 38,
+      width: 38,
+    },
+  });
+export default withStyles(styles, { withTheme: true })(Experience);
