@@ -15,7 +15,7 @@ class App extends Component {
             </Row>
             <Row>
                 <Col>
-                    <img style={border_Style} src={CEM} alt="Card image cap" />
+                    <img style={border_Style} src={CEM} alt="Card cap" />
                 </Col>
                 <Col>
                 <ul>
