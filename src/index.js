@@ -9,7 +9,7 @@ import { Provider } from 'react-redux'
 
 const StoreInstance = Store({
 	filterlist: [],
-	skills: ["NodeJS", "LoRaWAN", "VBA","Visio", "SQL databases", "Distributed Systems", "Python", "Git version control", "HTML5", "Java", "ReactJS", "REST Integrations", "CSS", "HTML5", "JQuery", "Bootstrap", "AWS Solutions", "Microcontrollers", "QT Creator", "C++", "C"]
+	skills: ["NodeJS", "LoRaWAN", "VBA","Visio", "SQL", "Distributed Systems", "Python", "Git", "HTML5", "Java", "ReactJS", "REST", "CSS", "HTML5", "JQuery", "Bootstrap", "AWS", "Microcontrollers", "QT", "cpp", "C"]
 });
 
 ReactDOM.render(<Provider store={StoreInstance}>
