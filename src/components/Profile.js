@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Spacee_week} from '../images';
-import { Container,Col,Row,Button } from 'reactstrap';
+import { Container,Col,Row } from 'reactstrap';
 class App extends Component {
     render() {
         const border_Style = {
@@ -12,7 +12,7 @@ class App extends Component {
                 <h1 style={{textAlign:"left",marginLeft:"1vw"}}>Alexandre Rodrigues Pelagaggi Nunes</h1>
             </Row>
             <Row>
-                <Col>
+                <Col sm={{ size: 6}}>
                     <br/>
                     <img style={border_Style} src={Spacee_week} alt="Card cap" />
                 </Col>
