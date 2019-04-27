@@ -43,7 +43,7 @@ class App extends Component {
               dateText="09/2018 – Present"
               logo={IPB}
               intro={'Master in Industrial Electronic Engineering'}
-              description={`Developing an indoor location platform capable of benchmark several machine learning algorithms with signal fusion capability, achieving floor detection and high precision indoor location`}
+              description={`Developing an indoor location platform capable of benchmark several machine learning algorithms with signal fusion capability, achieving floor detection and high precision indoor location.`}
             />
             <Experience
               TimelineColor='#e86971'
