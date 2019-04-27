@@ -23,7 +23,8 @@ class Experience extends Component {
             padding:'5px',
             width:"100%",
             maxWidth:"400px",
-            display:"inline"
+            display:"inline",
+            marginBottom:"15px",
             
         };
         return (
@@ -38,14 +39,14 @@ class Experience extends Component {
                         <Container style={{width:"100%"}}>
                             <Row style={{marginBottom:"2vh"}}>
                                 <Col>
-                                <img style={border_Style} src={this.props.logo} alt="Live from space album cover"/>
-                                <h5 style={{marginLeft:"1vw",display:"inline"}}>
-                                    {this.props.intro}
-                                </h5>
+                                  <img style={border_Style} src={this.props.logo} alt="Live from space album cover"/>
+                                  <h5 style={{marginLeft:"1vw",display:"inline"}}>
+                                      {this.props.intro}
+                                  </h5>
                                 </Col>
                             </Row>
                             <Row>
-                                <p style={{"white-space": "pre-line","text-align":"justify"}}>{this.props.description}</p>
+                                <p style={{"text-align":"justify", paddingRight:"5px"}}>{this.props.description}</p>
                             </Row>
                         </Container>            
                     </CardContent>
