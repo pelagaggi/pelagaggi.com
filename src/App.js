@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {circuit, phygitall, altran, TKA, eletro, cefet, cnpq, isep} from "./images/index";
+import {circuit, phygitall, altran, TKA, eletro, cefet,IPB, cnpq, isep} from "./images/index";
 import './App.css';
 import Profile from './components/Profile.js'
 import Experience from './components/Experience.js';
@@ -40,6 +40,12 @@ class App extends Component {
               description={`Developing as a safety team member, automated tests for embedded AUTOSAR complying embedded systems, delivering robot framework and custom python libraries automated tests for continuous integration.`}
             />
             <Experience
+              dateText="09/2018 – Present"
+              logo={IPB}
+              intro={'Master in Industrial Electronic Engineering'}
+              description={`Developing an indoor location platform capable of benchmark several machine learning algorithms with signal fusion capability, achieving floor detection and high precision indoor location`}
+            />
+            <Experience
               TimelineColor='#e86971'
               dateText="11/2017 – 02/2019"
               logo={phygitall}
@@ -65,7 +71,7 @@ class App extends Component {
               TimelineColor='#e86971'
               dateText="11/2016 – 11/2017"
               logo={eletro} 
-              intro={'Internship in ICE'}
+              intro={'Electronic engineering  internship in Instrumentation and Control'}
               description={`Intern in instrumentation and control section of Eletronuclear-Eletrobras, acting as a developer for HMI human factors engineering to nuclear power plant Angra 2 and Angra 3, automating control room GUI via VBA solutions for Microsoft VISIO and punctually developing QT M2M supervisory systems.
               
               Proposed developed and delivered an HMI simulation room for Angra 3 power plant as defined by Human Factors engineering standards in nuclear power plants by integrating existing VISIO diagrams with VBA solution.
