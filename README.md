@@ -1,6 +1,6 @@
 # [Alexandre Rodrigues Pelagaggi Nunes](https://www.pelagaggi.com)
 
-### This is my personal webpage portfolio, his goal is to explain my path as a developer and engineer in a more detailed way than a resume and a more flexible way than a curriculum vitae. If you like the shape of it feel free to use and modify to your own experiences.
+### This is my personal webpage portfolio, its goal is to explain my path as a developer and engineer in a more detailed way than a resume and a more flexible way than a curriculum vitae. If you like the shape of it feel free to use and modify to your own experiences.
 
 #### I am using React (create-react-app) and introducing redux to manage a further logic for skills filtering so I will just leave create-react-app initial Read-me in order to help anyone who eventually thinks of forking it.
 <br/><br/>
