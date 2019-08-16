@@ -37,10 +37,10 @@ class App extends Component {
               dateText="02/2019 – Present"
               logo={altran}
               intro={'TECHNICIAN CONSULTANT AT ALTRAN'}
-              description={`Developing as a safety team member, automated tests for embedded AUTOSAR complying embedded systems, delivering robot framework and custom python libraries automated tests for continuous integration.`}
+              description={`Developing React/Electron applications for Design Validation Tests and Build verification tests integration with CAN protocol handling, as well as writing software specifications and guidelines.Developing as a safety team member, embedded software and automated tests for AUTOSAR complying systems, as defined by Continental / BMW clients and Automotive Safety Integrity Level. Performing build verifications tests via robot framework along with C# CAPL for Vector CAN / CANoe interfaces in order to delivery automated tests for continuous integration.`}
             />
             <Experience
-              dateText="09/2018 – Present"
+              dateText="09/2018 – 06/2019"
               logo={IPB}
               intro={'Master in Industrial Electronic Engineering'}
               description={`Developing an indoor location platform capable of benchmark several machine learning algorithms with signal fusion capability, achieving floor detection and high precision indoor location.`}
