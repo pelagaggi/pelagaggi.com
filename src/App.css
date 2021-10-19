@@ -46,7 +46,7 @@ ul, li {
 }
 
 .timeline-item-date{
-  min-width: min(65vw, 150px);
+  min-width: min(65vw, 180px);
 }
 a{
   color: rgb(77, 112, 173);
