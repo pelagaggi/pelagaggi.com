@@ -57,7 +57,7 @@ export const experiences = [
       ],
     },
     {
-      date: "09/2017",
+      date: "09/2017 - 09/2017",
       logo: TKA,
       entityUrl:'https://www.linkedin.com/company/the-knowledge-academy/',
       intro: 'JAVA INSTRUCTOR',

@@ -12,7 +12,7 @@ const Experience = ({ classes, date, logo, intro, description, entityUrl }) => {
       style={{ color: "#4d70ad" }}
       dateInnerStyle={{ background: '#4d70ad' }}>
       <Card className={classes.card} >
-        <Container>
+        <Container className={classes.container}>
           <Row >
             <Col className='experience-title-col'>
               <a href={entityUrl} target='_blank' alt={`logo_`} ><div className='experience-image-logo' style={{
@@ -40,16 +40,21 @@ const Experience = ({ classes, date, logo, intro, description, entityUrl }) => {
 export default withStyles(theme=> ({
   card: {
     display: 'flex',
-    padding:'16px',
+    padding:'16px 8px',
     minWidth:'65vw',
     [theme.breakpoints.up('sm')]: {
       minWidth:'unset',
+      padding:'16px',
     },
+  },
+  container:{
+    paddingLeft:'0',
+    paddingRight:'0',
   },
   title:{
     float:'left',
     [theme.breakpoints.up('md')]: {
       float:'inherit',
-    },    
+    },
   }
 }))(Experience);
