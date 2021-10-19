@@ -3,6 +3,8 @@ export {default as circuit } from "./circuit.jpeg"
 export {default as CEM } from './profile.png'
 export {default as spacee_week } from './Spacee_week.jpg'
 
+export {default as csc } from './companies/csc-logo.jpg'
+export {default as microsys } from './companies/Logo_Microsys.png'
 export {default as phygitall } from './companies/Logo_Phygitall.png'
 export {default as altran } from './companies/Logo_Altran.png'
 export {default as TKA } from './companies/TKA.jpg'

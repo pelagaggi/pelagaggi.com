@@ -1,83 +1,55 @@
-import React, { Component } from 'react';
-//import { Collapse, Row, Col ,Card, CardImg, CardText, CardBody} from 'reactstrap';
+import React from 'react';
 import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
 import { withStyles } from '@material-ui/core/styles';
-import {Row,Col,Container} from 'reactstrap';
-import { TimelineItem }  from 'vertical-timeline-component-for-react';
+import { Row, Col, Container } from 'reactstrap';
+import { TimelineItem } from 'vertical-timeline-component-for-react';
+import { Typography } from '@material-ui/core';
 
-class Experience extends Component {
-    constructor(props) {
-        super(props);
-        this.toggle = this.toggle.bind(this);
-        this.state = { collapse: false };
-    }
-    toggle() {
-        this.setState({ collapse: !this.state.collapse });
-    }
-    render() {
-        const { classes } = this.props;
-        const border_Style = {
-            boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
-            borderRadius: '7%',
-            padding:'5px',
-            width:"100%",
-            maxWidth:"400px",
-            display:"inline",
-            marginBottom:"15px",
-            
-        };
-        return (
-            <TimelineItem
-            key={this.props.key}
-            dateText={this.props.dateText}
-            style={{ color: "#4d70ad" }}
-            dateInnerStyle={{ background: '#4d70ad'}}>
-                <Card className={classes.card} >
-            
-                    <CardContent >
-                        <Container style={{width:"100%"}}>
-                            <Row style={{marginBottom:"2vh"}}>
-                                <Col>
-                                  <img style={border_Style} src={this.props.logo} alt="Live from space album cover"/>
-                                  <h5 style={{marginLeft:"1vw",display:"inline"}}>
-                                      {this.props.intro}
-                                  </h5>
-                                </Col>
-                            </Row>
-                            <Row>
-                                <p style={{"text-align":"justify", paddingRight:"5px"}}>{this.props.description}</p>
-                            </Row>
-                        </Container>            
-                    </CardContent>
-                </Card>
-            </TimelineItem>
-    )
-    }
+const Experience = ({ classes, date, logo, intro, description, entityUrl }) => {
+  return (
+    <TimelineItem
+      dateText={date}
+      style={{ color: "#4d70ad" }}
+      dateInnerStyle={{ background: '#4d70ad' }}>
+      <Card className={classes.card} >
+        <Container>
+          <Row >
+            <Col className='experience-title-col'>
+              <a href={entityUrl} target='_blank' alt={`logo_`} ><div className='experience-image-logo' style={{
+                backgroundImage: `url("${logo}")`
+              }} />
+              </a>
+              <Typography className={`experience-title ${classes.title}`} variant='body1' children={intro} />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Typography className='experience-content' variant='body2' >
+                {description.map((paragraph,key)=>(
+                  <span key={key} className='experience-paragraph'>{paragraph}</span>
+                ))}
+              </Typography>
+            </Col>
+          </Row>
+        </Container>
+      </Card>
+    </TimelineItem>
+  )
 }
-const styles = theme => ({
-    card: {
-      display: 'flex',
+
+export default withStyles(theme=> ({
+  card: {
+    display: 'flex',
+    padding:'16px',
+    minWidth:'65vw',
+    [theme.breakpoints.up('sm')]: {
+      minWidth:'unset',
     },
-    details: {
-      display: 'flex',
-      flexDirection: 'column',
-    },
-    content: {
-      flex: '1 0 auto',
-    },
-    cover: {
-      width: 151,
-    },
-    controls: {
-      display: 'flex',
-      alignItems: 'center',
-      paddingLeft: theme.spacing.unit,
-      paddingBottom: theme.spacing.unit,
-    },
-    playIcon: {
-      height: 38,
-      width: 38,
-    },
-  });
-export default withStyles(styles, { withTheme: true })(Experience);
+  },
+  title:{
+    float:'left',
+    [theme.breakpoints.up('md')]: {
+      float:'inherit',
+    },    
+  }
+}))(Experience);

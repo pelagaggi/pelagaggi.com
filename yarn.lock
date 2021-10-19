@@ -11336,7 +11336,7 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-vertical-timeline-component-for-react@^1.0.6:
+vertical-timeline-component-for-react@^1.0.7:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/vertical-timeline-component-for-react/-/vertical-timeline-component-for-react-1.0.7.tgz#3ea09bd7745ebb73e59ec40fcbf51bf3fb4accf4"
   integrity sha512-KYQYgbfX6mRLxcQI/Q8YnDvch0jmSJhVaVygZRgAj750vBpdoEcTsKXGm17B8vA4TDF+K4VezSM/z/yv/bZstg==

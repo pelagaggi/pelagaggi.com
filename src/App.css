@@ -1,31 +1,56 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  height:100%;
   padding: 20px;
-  color: white;
-}
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
+  padding-top: 60px;
+  
+  border-bottom: 1px solid gray;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
 
 .timeline.timeline--animate{
   max-width: 80%;
+}
+
+ul, li {
+  margin: 0; 
+  padding: 0;
+}
+
+.experience-image-logo{
+  float:left;
+  margin-right: 16px;
+  width: 200px;
+  height: 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.experience-title{
+  text-align: justify;
+  padding-top: 20px;
+}
+.experience-title-col{
+  padding: 0;
+  overflow: auto;
+  margin-bottom: 24px;
+}
+.experience-content{
+  text-align: justify;
+}
+.experience-content .experience-paragraph:not(:first-child) {
+  margin-top: 12px;
+}
+.experience-paragraph{
+  display: block;
+}
+
+.timeline-item-date{
+  min-width: min(65vw, 150px);
+}
+a{
+  color: rgb(77, 112, 173);
+}
+.headline a{
+  margin-left: 5px;
 }
