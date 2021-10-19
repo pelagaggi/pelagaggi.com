@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Spacee_week} from '../images';
+import {spacee_week} from '../images';
 import { Container,Col,Row } from 'reactstrap';
 class App extends Component {
     render() {
@@ -14,7 +14,7 @@ class App extends Component {
             <Row>
                 <Col sm={{ size: 6}}>
                     <br/>
-                    <img style={border_Style} src={Spacee_week} alt="Card cap" />
+                    <img style={border_Style} src={spacee_week} alt="Card cap" />
                 </Col>
                 <Col>
                 <br/>
